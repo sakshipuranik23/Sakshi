@@ -1,0 +1,5 @@
+n=24.55
+cost=24.55+3
+cost=cost+(n+0.75)*59
+
+print(cost)
