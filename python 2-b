@@ -1,0 +1,20 @@
+sent = input('Enter a sentence:\n')
+
+print("sentence is:\n",sent)
+
+n = sent.find('not') 
+p = sent.find('poor') 
+
+if n == -1 and p== -1:
+	print('there is no not and poor in the sentence')
+else:
+	print('not is at {} position'.format(n))
+	print('poor is at {} position'.format(p))
+
+
+if sent[p+5:p+8] == 'bad':
+	if n > -1 and p>n:
+		sent = sent.replace(sent[n:p+4],'good')
+		print('New sentence:\n',sent)
+else:
+	print('There is no bad after poor')
