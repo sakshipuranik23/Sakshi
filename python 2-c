@@ -1,0 +1,10 @@
+string = input("Enter one string:\n")
+
+print("original string is:\n",string)
+
+if len(string) < 2:
+	print("Enter string of atleast two characters:\n")
+
+new_string = 4*(string[-2::])
+
+print("new string is: \n",new_string)
