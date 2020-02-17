@@ -1,0 +1,19 @@
+print("enter words to be added to list")
+mylist = raw_input().split()
+print("\nList is:\n",mylist)
+x = int(raw_input("Enter Length above which words should be displayed: "))
+
+for i in mylist:
+	if len(i) >= x:
+		print(i)
+
+O/p:
+
+enter words to be added to list
+sakshi yoooo no why stupid
+('\nList is:\n', ['sakshi', 'yoooo', 'no', 'why', 'stupid'])
+Enter Length above which words should be displayed: 3
+sakshi
+yoooo
+why
+stupid
