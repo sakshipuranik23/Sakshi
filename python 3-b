@@ -1,0 +1,25 @@
+print("Enter Elements of the first list:\n")
+list1 = raw_input().split()
+
+print("Enter Elements of the second list:\n")
+list2 = raw_input().split()
+
+print("List 1 is:\n",list1)
+print("List 2 is:\n",list2)
+
+for i in list1:
+	for j in list2:
+		if i==j:
+			print("True , {} is common".format(i))
+
+
+O/p:
+sam nosh car two
+Enter Elements of the second list:
+
+cap buck black widow
+('List 1 is:\n', ['sam', 'nosh', 'car', 'two'])
+('List 2 is:\n', ['cap', 'buck', 'black', 'widow'])
+
+
+ 
