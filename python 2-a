@@ -1,0 +1,9 @@
+def word(name):
+	if len(name) < 2:
+		return ''
+	else:
+		return name[0:2] + name[-2:]
+
+print(word('python'))
+print(word('Sa'))
+print(word('S'))
