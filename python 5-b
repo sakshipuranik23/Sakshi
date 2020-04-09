@@ -1,0 +1,11 @@
+for i in range(1,51):
+	strin = []
+	if i % 3 == 0:
+		strin.append('Fizz')
+	if i % 5 == 0:
+		strin.append('Buzz')
+	if strin == []:
+		print(i)
+	else:
+		strin1=''.join(str(x) for x in strin)
+		print(strin1)
