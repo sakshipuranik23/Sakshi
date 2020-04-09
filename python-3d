@@ -1,0 +1,6 @@
+tuple = (("Ronak", "Sakshi"), ("Patel", "Bob"))
+print ("The original tuple is " + str(tuple))
+if (any('Ronak' in i for i in tuple)) :
+    print("Ronak is present")
+else :
+    print("Ronak is not present")
