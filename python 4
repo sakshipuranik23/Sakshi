@@ -1,0 +1,32 @@
+passcode = str(input("Enter a password\nPassword must contain: \n -atleast 1 lower case and 1 upper case character\n -atleast 1 number\n -atleast 1 symbol\n -with minimum length 6 and maximum length 16 \n"))
+verify = tuple(passcode)
+low = False
+up = False
+num = False
+sym = False
+siz = False
+for x in verify:
+	if x.islower():
+		low = True
+	if x.isupper():
+		up = True
+	if x.isdigit():
+		num = True
+	if not (x.islower() or x.isupper() or x.isdigit()):
+		sym = True
+if (len(passcode) >= 6) and (len(passcode) <= 16):
+	siz = True
+validity = low and up and num and sym and siz
+if validity:
+	print("Password is valid.")
+else:
+	if not low:	
+		print("Missing lowercase character.")
+	if not up:
+		print("Missing uppercase character.")
+	if not num:
+		print("Missing number.")
+	if not sym:
+		print("Missing special character.")
+	if not siz:
+		print("Size must be between 6 and 16.")
