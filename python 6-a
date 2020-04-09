@@ -1,0 +1,11 @@
+def lists(l):
+  x = []
+  
+  for a in l:
+    if a not in x:
+      x.append(a)
+  return x
+
+l1=[21,22,21,21,23,42,21,43,99,87]
+print("Original List:",l1)
+print("Unique List:",lists(l1))
