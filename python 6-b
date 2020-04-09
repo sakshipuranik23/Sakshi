@@ -1,0 +1,13 @@
+def fibo(l):
+    if(l<= 1):
+        return l
+    else:
+        return (fibo(l-1) + fibo(l-2))
+
+l= int(input("Enter no. of value:"))
+
+print("Fibonacci series:")
+for i in range(l):
+    print(fibo(i))
+
+
