@@ -1,0 +1,55 @@
+a.	Constructor
+class Shinobi:  
+    def __init__(self,name,id):  
+        self.id = id;  
+        self.name = name;  
+    def display (self):  
+        print("Name: %s - %d Hokage \n"%(self.name,self.id))  
+s1 = Shinobi("Uzumaki Naruto",7)  
+s2 = Shinobi("Hatake Kakashi",6)
+s3 = Shinobi("Senju Tsunade",5)
+s4 = Shinobi("Namikaze Minato",4)
+s1.display();
+s2.display();
+s3.display();
+s4.display();
+
+b.	Inheritance
+class Naruto:  
+    def name(self):  
+        print("Name: Naruto Uzumaki")  
+  
+class Dream(Naruto):  
+    def hokage(self):  
+        print("My dream is to become Hokage,Dattebayo!!")  
+  
+class Food(Dream):  
+    def eat(self):  
+        print("Eats Ichiraku Ramen...")  
+d = Food()  
+d.name()  
+d.hokage()  
+d.eat()  
+
+c.	Polymorphism
+
+class India():
+     def capital(self):
+       print("New Delhi")
+ 
+     def language(self):
+       print("Hindi")
+ 
+class USA():
+     def capital(self):
+       print("Washington, D.C.")
+ 
+     def language(self):
+       print("English")
+ 
+obj1= India()
+obj2= USA()
+for i in (obj1, obj2):
+    i.capital()
+    i.language()
+
