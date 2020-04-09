@@ -1,0 +1,27 @@
+import datetime
+class Person:
+    def __init__(self, name, surname, birthdate, address, email):
+        self.name = name
+        self.surname = surname
+        self.birthdate = birthdate
+        self.address = address
+        self.email = email
+
+    def age(self):
+        today = datetime.date.today()
+        age = today.year - self.birthdate.year
+
+        if today < datetime.date(today.year, self.birthdate.month, self.birthdate.day):
+            age -= 1
+
+        return age
+
+person = Person("Naruto","Uzumaki",datetime.date(2000, 6, 12),"Konoha,Land of Fire","dattebayo@gmail.com")
+
+print("First name:",person.name)
+print("Last name:",person.surname)
+print("Birthdate:",person.birthdate)
+print("Address:",person.address)
+print("Email:",person.email)
+print("Age:",person.age())
+
