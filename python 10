@@ -1,0 +1,22 @@
+file=open(Python 1.txt",'r)
+for each in file:
+print(each)
+
+#Using read()
+file=open(Python1.bxt,r)
+print(file.read())
+
+#To create a file using write():
+file=open('Python2.bt''w')
+file.write"This is the write command.")
+file.write(" It allows us to write in a particular file")
+file=open( Python2.txt, r)
+print(file.read())
+file.close() 
+
+#Using append()
+file=open('Python3.bxt,a')
+file.write("This method will add this line")
+file.close)
+file=open('Python3.txt','r)
+print(file.read())
